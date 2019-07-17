@@ -25,7 +25,7 @@ plugin.send = function (data, callback) {
   var smtpConfig = {
     host: settings['nodemailer:smtp:host'],
     port: settings['nodemailer:smtp:port'],
-    secure: false,
+    secure: settings['nodemailer:smtp:secure'],
     //requireTLS: settings['nodemailer:smtp:tls'],
     auth: {
       user: settings['nodemailer:smtp:username'],
